@@ -168,8 +168,9 @@ Run on {s['run_date']} · model: {', '.join(s['models'])} · {s['answers']} answ
     (table below). Pitch each one for inclusion, starting with the most crowded.</li>
     <li><b>Fix the name collision.</b> Asked about {target} directly, Gemini mixed it up with the older
     {target} photo/video app {n_old_app}× and assumed a different tool {n_other}×.
-    A clear “{target} AI is a PowerPoint add-in for consultants and enterprise teams” page, plus
-    comparison pages (vs Gamma, vs Copilot), gives AI engines the right facts.</li>
+    Add one line to <code>llms.txt</code>, the About page and the schema saying “{target} AI is a PowerPoint add-in,
+    not the {target} photo/video app”. Then fill the biggest content gap: there are “vs” pages for Copilot,
+    Plus AI, Beautiful.ai, Prezi and ChatGPT, but none for Gamma, the tool AI recommends most.</li>
     <li><b>Measure every week.</b> This tracker re-runs every Monday, so we can see whether 1 and 2 move the
     numbers. Next: add ChatGPT, Perplexity and Claude, and a Slack alert when the share changes.</li>
   </ol>

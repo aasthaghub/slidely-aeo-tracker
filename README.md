@@ -28,8 +28,10 @@ This repo measures it, explains why not, and lists what to fix. It re-runs every
 
 ### What I'd do next
 - Get Slidely onto the 16 outreach-target pages (ranked by how crowded they are).
-- Publish a clear "Slidely AI is a PowerPoint add-in for consultants and enterprise teams" page and
-  comparison pages (vs Gamma, vs Copilot) to fix the name collision for AI engines.
+- Fix the name collision: one line in `llms.txt`, the About page and the schema saying "Slidely AI is a
+  PowerPoint add-in, not the Slidely photo/video app".
+- Fill the biggest content gap: slidely.ai has "vs" pages for Copilot, Plus AI, Beautiful.ai, Prezi and
+  ChatGPT, but none for Gamma, the tool AI recommends most.
 - Extend the tracker to ChatGPT, Perplexity and Claude, and add a Slack alert when the share moves.
 
 ## How it works
