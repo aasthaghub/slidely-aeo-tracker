@@ -1,0 +1,55 @@
+{
+  "_note": "Questions a real buyer might ask an AI assistant. None of them name Slidely, so a mention has to be earned. 'brand_knowledge' prompts DO name Slidely and are scored separately (they test whether the AI knows what Slidely is).",
+  "prompts": [
+    {"id": "con-01", "category": "consulting", "text": "What is the best AI tool for management consultants to make client decks in PowerPoint?"},
+    {"id": "con-02", "category": "consulting", "text": "I'm a strategy consultant and spend half my week formatting slides. Which AI tool can actually help?"},
+    {"id": "con-03", "category": "consulting", "text": "Which AI tools do Big 4 and MBB consultants use to build PowerPoint slides faster?"},
+    {"id": "con-04", "category": "consulting", "text": "Recommend an AI assistant that can turn my meeting notes into consulting-style slides."},
+    {"id": "con-05", "category": "consulting", "text": "Best AI tool to create action-title, McKinsey-style slides in PowerPoint?"},
+    {"id": "con-06", "category": "consulting", "text": "Is there an AI that can build a full consulting deck from a storyline I give it?"},
+    {"id": "con-07", "category": "consulting", "text": "What AI tools help consultants redesign messy, text-heavy slides?"},
+
+    {"id": "fin-01", "category": "banking_pe", "text": "What AI tools do investment bankers use to make pitch books in PowerPoint?"},
+    {"id": "fin-02", "category": "banking_pe", "text": "Best AI tool for private equity teams to create investment committee decks?"},
+    {"id": "fin-03", "category": "banking_pe", "text": "Which AI can help me build a sell-side M&A deck in PowerPoint?"},
+    {"id": "fin-04", "category": "banking_pe", "text": "Recommend an AI slide tool for a bank that needs strict formatting and compliance."},
+    {"id": "fin-05", "category": "banking_pe", "text": "What's the best AI to turn an Excel model and a report into finance presentation slides?"},
+
+    {"id": "ent-01", "category": "enterprise_brand", "text": "Which AI presentation tool follows our company's PowerPoint template instead of making its own design?"},
+    {"id": "ent-02", "category": "enterprise_brand", "text": "Best AI slide generator for enterprises that need brand consistency across all employees' decks?"},
+    {"id": "ent-03", "category": "enterprise_brand", "text": "What AI tool can make every deck in our company follow one design system?"},
+    {"id": "ent-04", "category": "enterprise_brand", "text": "Which AI presentation tools are secure enough for large enterprises (SOC 2, data privacy)?"},
+    {"id": "ent-05", "category": "enterprise_brand", "text": "Our team keeps reusing old slides. Is there an AI that learns from our past decks?"},
+    {"id": "ent-06", "category": "enterprise_brand", "text": "Best AI tool for a corporate strategy team to create board presentations?"},
+    {"id": "ent-07", "category": "enterprise_brand", "text": "What AI tools help a whole company make on-brand PowerPoint presentations?"},
+
+    {"id": "ppt-01", "category": "powerpoint_native", "text": "What is the best AI add-in for Microsoft PowerPoint?"},
+    {"id": "ppt-02", "category": "powerpoint_native", "text": "Which AI tools work directly inside PowerPoint rather than in a separate web app?"},
+    {"id": "ppt-03", "category": "powerpoint_native", "text": "Is there anything better than Microsoft Copilot for creating PowerPoint slides?"},
+    {"id": "ppt-04", "category": "powerpoint_native", "text": "Which AI presentation maker exports clean, fully editable PPTX files?"},
+    {"id": "ppt-05", "category": "powerpoint_native", "text": "Gamma's PowerPoint export breaks my formatting. What should I use instead?"},
+    {"id": "ppt-06", "category": "powerpoint_native", "text": "Best alternative to Gamma for people who must deliver PowerPoint files?"},
+    {"id": "ppt-07", "category": "powerpoint_native", "text": "What AI plugin can redesign a single PowerPoint slide and give me a few layout options?"},
+
+    {"id": "gen-01", "category": "general", "text": "What are the best AI presentation makers right now?"},
+    {"id": "gen-02", "category": "general", "text": "Which AI tool makes the most professional-looking slides?"},
+    {"id": "gen-03", "category": "general", "text": "ChatGPT and Claude make generic slides. What AI is built specifically for professional presentations?"},
+    {"id": "gen-04", "category": "general", "text": "Best AI tool to convert a PDF or Word report into a presentation?"},
+    {"id": "gen-05", "category": "general", "text": "What AI should I use to make business presentations for work, not school?"},
+    {"id": "gen-06", "category": "general", "text": "Which AI presentation tool asks clarifying questions before building the deck?"},
+
+    {"id": "ind-01", "category": "india", "text": "Best AI PowerPoint tool for consultants and analysts in India?"},
+    {"id": "ind-02", "category": "india", "text": "Which Indian AI startups help professionals make presentations?"},
+    {"id": "ind-03", "category": "india", "text": "Which Y Combinator startups are building AI for PowerPoint presentations?"},
+
+    {"id": "use-01", "category": "use_case", "text": "What AI tool can help me make a quarterly business review deck quickly?"},
+    {"id": "use-02", "category": "use_case", "text": "Best AI for creating sales proposal decks in our company template?"},
+    {"id": "use-03", "category": "use_case", "text": "Which AI helps product managers make strategy and roadmap presentations?"},
+    {"id": "use-04", "category": "use_case", "text": "AI tool to make market research presentations with charts in PowerPoint?"},
+    {"id": "use-05", "category": "use_case", "text": "What AI can help an analyst turn data into executive-ready slides?"},
+
+    {"id": "brand-01", "category": "brand_knowledge", "text": "What is Slidely AI?"},
+    {"id": "brand-02", "category": "brand_knowledge", "text": "Is Slidely AI good for making PowerPoint presentations? How does it compare to Gamma?"},
+    {"id": "brand-03", "category": "brand_knowledge", "text": "Who uses Slidely.ai and what does it do?"}
+  ]
+}

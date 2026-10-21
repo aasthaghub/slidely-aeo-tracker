@@ -1,0 +1,35 @@
+# Re-runs the tracker every Monday and publishes the updated dashboard,
+# so the numbers stay fresh without anyone touching it.
+# Needs one repository secret: GEMINI_API_KEY (Settings > Secrets and variables > Actions).
+name: weekly-aeo-run
+
+on:
+  schedule:
+    - cron: "30 3 * * 1"   # Mondays 03:30 UTC (09:00 IST)
+  workflow_dispatch:        # "Run workflow" button for manual runs
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: python ask_ai.py
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      - run: python analyze.py
+      - run: python check_sources.py
+      - run: python build_dashboard.py
+      - name: Commit results
+        run: |
+          git config user.name "aeo-tracker-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add results docs
+          git commit -m "Weekly AEO run $(date +%F)" || echo "No changes"
+          git push

@@ -1,0 +1,26 @@
+{
+  "_note": "Each brand and the spellings that count as a mention (case-insensitive, whole words). Keep aliases specific: 'pitch' alone would match normal English, so only 'pitch.com' counts.",
+  "target": "Slidely",
+  "brands": {
+    "Slidely": ["slidely ai", "slidely.ai", "slidely"],
+    "Gamma": ["gamma.app", "gamma ai", "gamma"],
+    "Microsoft Copilot": ["microsoft copilot", "copilot"],
+    "Beautiful.ai": ["beautiful.ai", "beautiful ai", "beautifulai"],
+    "Plus AI": ["plus ai", "plusai", "plusdocs"],
+    "Tome": ["tome"],
+    "Pitch": ["pitch.com"],
+    "Prezent": ["prezent.ai", "prezent"],
+    "Presentations.AI": ["presentations.ai"],
+    "SlidesAI": ["slidesai.io", "slidesai"],
+    "SlideSpeak": ["slidespeak"],
+    "Canva": ["canva"],
+    "Prezi": ["prezi"],
+    "think-cell": ["think-cell", "thinkcell", "think cell"],
+    "UpSlide": ["upslide"],
+    "Decktopus": ["decktopus"],
+    "auxi": ["auxi"],
+    "Google Slides": ["google slides"],
+    "ChatGPT": ["chatgpt"],
+    "Claude": ["claude"]
+  }
+}

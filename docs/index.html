@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Slidely AI Visibility</title>
+<style>
+:root { --bg:#f7f7f5; --card:#ffffff; --ink:#1d1d1f; --muted:#6b6b70; --line:#e4e4e0;
+  --track:#efefec; --bar:#a3a6ad; --accent:#d9480f; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg:#141416; --card:#1d1d20; --ink:#ececee; --muted:#9a9aa2; --line:#2e2e33;
+  --track:#26262a; --bar:#6c6f78; --accent:#ff7a3d; } }
+:root[data-theme="dark"] { --bg:#141416; --card:#1d1d20; --ink:#ececee; --muted:#9a9aa2;
+  --line:#2e2e33; --track:#26262a; --bar:#6c6f78; --accent:#ff7a3d; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--ink);
+  font:15px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+main { max-width:920px; margin:0 auto; padding:32px 16px 64px; }
+h1 { font-size:28px; line-height:1.2; margin:0 0 6px; }
+h2 { font-size:19px; margin:0 0 4px; } h3 { font-size:15px; margin:22px 0 4px; }
+.sub { color:var(--muted); margin:0 0 14px; }
+section { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:20px; margin-top:16px; }
+.kpis { display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:12px; margin-top:20px; }
+.kpi { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px; color:var(--muted); }
+.kpi .big { font-size:30px; font-weight:700; color:var(--ink); line-height:1.1; margin-bottom:4px; }
+.kpi.hl .big { color:var(--accent); }
+.row { display:grid; grid-template-columns:140px 1fr 52px; align-items:center; gap:10px; padding:3px 0; }
+.row:hover .label, .row:hover .value { color:var(--ink); font-weight:600; }
+.label { color:var(--muted); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.value { text-align:right; font-variant-numeric:tabular-nums; color:var(--muted); }
+.track { background:var(--track); border-radius:4px; height:14px; overflow:hidden; }
+.bar { display:block; height:100%; background:var(--bar); border-radius:0 4px 4px 0; }
+.bar.target { background:var(--accent); }
+.row:has(.target) .label, .row:has(.target) .value { color:var(--accent); font-weight:700; }
+.tablewrap { overflow-x:auto; }
+table { width:100%; border-collapse:collapse; font-size:14px; }
+th, td { text-align:left; padding:8px 6px; border-bottom:1px solid var(--line); vertical-align:top; }
+th { color:var(--muted); font-weight:600; }
+td.num { text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap; }
+td.zero { color:var(--accent); font-weight:700; }
+a { color:inherit; text-decoration-color:var(--muted); word-break:break-all; }
+details { border-top:1px solid var(--line); padding:8px 0; }
+summary { cursor:pointer; }
+.answer { color:var(--muted); white-space:pre-wrap; font-size:14px; }
+ol li, ul li { margin-bottom:6px; }
+footer { color:var(--muted); font-size:13px; margin-top:24px; }
+@media (max-width:560px) { .row { grid-template-columns:100px 1fr 46px; } h1 { font-size:23px; } }
+</style></head>
+<body><main>
+<h1>Does AI recommend Slidely?</h1>
+<p class="sub">I asked Gemini 40 questions a real buyer would ask (“best AI tool for consulting decks in PowerPoint”, …),
+3× each, and counted which tools it recommended. None of the questions name Slidely.
+Run on 2026-10-21 · model: gemini-flash-latest, gemini-flash-lite-latest · 120 answers.</p>
+
+<div class="kpis">
+  <div class="kpi hl"><div class="big">0%</div><div>of AI answers mention Slidely</div></div>
+  <div class="kpi"><div class="big">90.8%</div><div>mention Gamma, the leader</div></div>
+  <div class="kpi"><div class="big">0/18</div><div>ranking pages list Slidely</div></div>
+  <div class="kpi"><div class="big" style="font-size:18px">generic guess (no PowerPoint add-in, no enterprise focus)</div><div>when asked “What is Slidely AI?”</div></div>
+</div>
+
+<section>
+  <h2>Share of AI answers that mention each tool</h2>
+  <p class="sub">Hover a bar for top-3 and named-first rates.</p>
+  <div class="chart"><div class="row" title="Gamma: in 90.8% of answers, top-3 in 78.3%, named first in 56.7%"><span class="label">Gamma</span><span class="track"><span class="bar" style="width:100.0%"></span></span><span class="value">90.8%</span></div>
+<div class="row" title="Beautiful.ai: in 84.2% of answers, top-3 in 53.3%, named first in 6.7%"><span class="label">Beautiful.ai</span><span class="track"><span class="bar" style="width:92.7%"></span></span><span class="value">84.2%</span></div>
+<div class="row" title="Microsoft Copilot: in 79.2% of answers, top-3 in 33.3%, named first in 5.8%"><span class="label">Microsoft Copilot</span><span class="track"><span class="bar" style="width:87.2%"></span></span><span class="value">79.2%</span></div>
+<div class="row" title="Google Slides: in 70.8% of answers, top-3 in 40.0%, named first in 6.7%"><span class="label">Google Slides</span><span class="track"><span class="bar" style="width:78.0%"></span></span><span class="value">70.8%</span></div>
+<div class="row" title="Plus AI: in 49.2% of answers, top-3 in 35.8%, named first in 9.2%"><span class="label">Plus AI</span><span class="track"><span class="bar" style="width:54.2%"></span></span><span class="value">49.2%</span></div>
+<div class="row" title="ChatGPT: in 45.0% of answers, top-3 in 6.7%, named first in 5.8%"><span class="label">ChatGPT</span><span class="track"><span class="bar" style="width:49.6%"></span></span><span class="value">45%</span></div>
+<div class="row" title="Tome: in 43.3% of answers, top-3 in 22.5%, named first in 3.3%"><span class="label">Tome</span><span class="track"><span class="bar" style="width:47.7%"></span></span><span class="value">43.3%</span></div>
+<div class="row" title="Claude: in 33.3% of answers, top-3 in 0.8%, named first in 0.0%"><span class="label">Claude</span><span class="track"><span class="bar" style="width:36.7%"></span></span><span class="value">33.3%</span></div>
+<div class="row" title="SlideSpeak: in 19.2% of answers, top-3 in 10.8%, named first in 4.2%"><span class="label">SlideSpeak</span><span class="track"><span class="bar" style="width:21.1%"></span></span><span class="value">19.2%</span></div>
+<div class="row" title="think-cell: in 11.7% of answers, top-3 in 0.8%, named first in 0.0%"><span class="label">think-cell</span><span class="track"><span class="bar" style="width:12.9%"></span></span><span class="value">11.7%</span></div>
+<div class="row" title="SlidesAI: in 11.7% of answers, top-3 in 5.8%, named first in 0.0%"><span class="label">SlidesAI</span><span class="track"><span class="bar" style="width:12.9%"></span></span><span class="value">11.7%</span></div>
+<div class="row" title="UpSlide: in 10.0% of answers, top-3 in 0.8%, named first in 0.0%"><span class="label">UpSlide</span><span class="track"><span class="bar" style="width:11.0%"></span></span><span class="value">10%</span></div>
+<div class="row" title="Slidely: in 0.0% of answers, top-3 in 0.0%, named first in 0.0%"><span class="label">Slidely</span><span class="track"><span class="bar target" style="width:0.6%"></span></span><span class="value">0%</span></div></div>
+  <h3>Where Slidely did show up</h3><ul><li>None. Slidely was not named in any answer to a buyer question.</li></ul>
+</section>
+
+<section>
+  <h2>By buyer type</h2>
+  <p class="sub">The segments Slidely sells to, and who AI recommends there instead.</p>
+  <div class="tablewrap"><table><thead><tr><th>Questions about</th><th>Answers</th><th>Slidely</th><th>Most recommended</th><th>Rate</th></tr></thead>
+  <tbody><tr><td>Consulting</td><td>21</td><td class='num zero'>0%</td><td>Gamma</td><td class='num'>100%</td></tr>
+<tr><td>Banking &amp; PE</td><td>15</td><td class='num zero'>0%</td><td>Microsoft Copilot</td><td class='num'>93.3%</td></tr>
+<tr><td>Enterprise &amp; brand</td><td>21</td><td class='num zero'>0%</td><td>Beautiful.ai</td><td class='num'>95.2%</td></tr>
+<tr><td>Inside PowerPoint</td><td>21</td><td class='num zero'>0%</td><td>Beautiful.ai</td><td class='num'>95.2%</td></tr>
+<tr><td>General</td><td>18</td><td class='num zero'>0%</td><td>Gamma</td><td class='num'>100%</td></tr>
+<tr><td>India / YC</td><td>9</td><td class='num zero'>0%</td><td>Google Slides</td><td class='num'>88.9%</td></tr>
+<tr><td>Specific use cases</td><td>15</td><td class='num zero'>0%</td><td>Gamma</td><td class='num'>93.3%</td></tr></tbody></table></div>
+</section>
+
+<section>
+  <h2>Why: the pages AI learns from don't list Slidely</h2>
+  <p class="sub">18 of 20 top-ranking “best AI presentation tool” pages were readable.
+  Slidely is listed on <b>0</b> of them. Bars show how many pages list each tool.</p>
+  <div class="chart"><div class="row" title="Google Slides: listed on 15 of 18 pages"><span class="label">Google Slides</span><span class="track"><span class="bar" style="width:100.0%"></span></span><span class="value">15</span></div>
+<div class="row" title="Gamma: listed on 13 of 18 pages"><span class="label">Gamma</span><span class="track"><span class="bar" style="width:86.7%"></span></span><span class="value">13</span></div>
+<div class="row" title="Beautiful.ai: listed on 13 of 18 pages"><span class="label">Beautiful.ai</span><span class="track"><span class="bar" style="width:86.7%"></span></span><span class="value">13</span></div>
+<div class="row" title="Microsoft Copilot: listed on 11 of 18 pages"><span class="label">Microsoft Copilot</span><span class="track"><span class="bar" style="width:73.3%"></span></span><span class="value">11</span></div>
+<div class="row" title="Canva: listed on 11 of 18 pages"><span class="label">Canva</span><span class="track"><span class="bar" style="width:73.3%"></span></span><span class="value">11</span></div>
+<div class="row" title="Plus AI: listed on 10 of 18 pages"><span class="label">Plus AI</span><span class="track"><span class="bar" style="width:66.7%"></span></span><span class="value">10</span></div>
+<div class="row" title="ChatGPT: listed on 10 of 18 pages"><span class="label">ChatGPT</span><span class="track"><span class="bar" style="width:66.7%"></span></span><span class="value">10</span></div>
+<div class="row" title="Claude: listed on 8 of 18 pages"><span class="label">Claude</span><span class="track"><span class="bar" style="width:53.3%"></span></span><span class="value">8</span></div>
+<div class="row" title="Prezi: listed on 6 of 18 pages"><span class="label">Prezi</span><span class="track"><span class="bar" style="width:40.0%"></span></span><span class="value">6</span></div>
+<div class="row" title="Decktopus: listed on 6 of 18 pages"><span class="label">Decktopus</span><span class="track"><span class="bar" style="width:40.0%"></span></span><span class="value">6</span></div>
+<div class="row" title="Tome: listed on 5 of 18 pages"><span class="label">Tome</span><span class="track"><span class="bar" style="width:33.3%"></span></span><span class="value">5</span></div>
+<div class="row" title="SlidesAI: listed on 5 of 18 pages"><span class="label">SlidesAI</span><span class="track"><span class="bar" style="width:33.3%"></span></span><span class="value">5</span></div>
+<div class="row" title="Slidely: listed on 0 of 18 pages"><span class="label">Slidely</span><span class="track"><span class="bar target" style="width:0.6%"></span></span><span class="value">0</span></div></div>
+  <h3>Outreach targets (16)</h3>
+  <p class="sub">Pages that list 3+ competitors but not Slidely, most crowded first. Getting added to these is the most direct lever on AI answers.</p>
+  <div class="tablewrap"><table><thead><tr><th>Page</th><th>Tools listed</th><th>Who's on it</th></tr></thead>
+  <tbody><tr><td><a href='https://www.prezent.ai/blog/best-ai-presentation-makers'>www.prezent.ai/blog/best-ai-presentation-makers</a></td><td class='num'>12</td><td>Prezent, Beautiful.ai, Canva, Presentations.AI, Gamma, Plus AI, SlidesAI, Prezi, Decktopus</td></tr>
+<tr><td><a href='https://resources.rework.com/tools/ai-tools/best-ai-tools-for-powerpoint-presentations-2026'>resources.rework.com/tools/ai-tools/best-ai-tools-for-powerpoint-prese</a></td><td class='num'>11</td><td>Microsoft Copilot, Plus AI, SlideSpeak, Beautiful.ai, Presentations.AI, Canva, Gamma, Decktopus</td></tr>
+<tr><td><a href='https://www.slidesai.io/blog/best-ai-presentation-makers'>www.slidesai.io/blog/best-ai-presentation-makers</a></td><td class='num'>10</td><td>SlidesAI, Beautiful.ai, Gamma, Prezi, Plus AI, Pitch, Presentations.AI</td></tr>
+<tr><td><a href='https://slidespeak.co/guides/top-5-ai-presentation-generator-consultants'>slidespeak.co/guides/top-5-ai-presentation-generator-consultants</a></td><td class='num'>10</td><td>SlideSpeak, Gamma, Microsoft Copilot, Canva, Decktopus, Beautiful.ai, Prezi</td></tr>
+<tr><td><a href='https://slidespeak.co/blog/top-5-gamma-alternatives-with-ai-in-2026'>slidespeak.co/blog/top-5-gamma-alternatives-with-ai-in-2026</a></td><td class='num'>10</td><td>Gamma, SlideSpeak, Beautiful.ai, Decktopus, Prezi, Microsoft Copilot, Canva</td></tr>
+<tr><td><a href='https://www.placementpreparation.io/blog/best-ai-presentation-tools/'>www.placementpreparation.io/blog/best-ai-presentation-tools/</a></td><td class='num'>9</td><td>Gamma, Prezent, Canva, Plus AI, Beautiful.ai, SlidesAI, Tome, Prezi</td></tr>
+<tr><td><a href='https://learnprompting.org/blog/ai-tools-for-presentations'>learnprompting.org/blog/ai-tools-for-presentations</a></td><td class='num'>9</td><td>Beautiful.ai, Tome, Gamma, Presentations.AI, Decktopus, SlidesAI, Canva</td></tr>
+<tr><td><a href='https://neurohive.io/en/ai-apps/8-best-gamma-alternatives-for-creating-presentations-faster/'>neurohive.io/en/ai-apps/8-best-gamma-alternatives-for-creating-present</a></td><td class='num'>9</td><td>Gamma, Canva, Beautiful.ai, Tome, Plus AI, Microsoft Copilot, Presentations.AI</td></tr>
+<tr><td><a href='https://prezi.com/blog/client-decks-ai-slide-builder-consultants-2026/'>prezi.com/blog/client-decks-ai-slide-builder-consultants-2026/</a></td><td class='num'>7</td><td>Prezi, Plus AI, Gamma, Beautiful.ai, Microsoft Copilot, Canva</td></tr>
+<tr><td><a href='https://aiunfiltered.beehiiv.com/p/best-ai-presentation-tools-2026'>aiunfiltered.beehiiv.com/p/best-ai-presentation-tools-2026</a></td><td class='num'>7</td><td>Gamma, Beautiful.ai, Tome, Prezent, Plus AI, Microsoft Copilot</td></tr>
+<tr><td><a href='https://plusai.com/blog/best-ai-tools-for-consultants'>plusai.com/blog/best-ai-tools-for-consultants</a></td><td class='num'>6</td><td>Plus AI, think-cell, Microsoft Copilot</td></tr>
+<tr><td><a href='https://www.simular.ai/alternatives/gamma-ai-alternatives'>www.simular.ai/alternatives/gamma-ai-alternatives</a></td><td class='num'>6</td><td>Gamma, Beautiful.ai, Canva, SlidesAI, Tome</td></tr>
+<tr><td><a href='https://www.hebbia.com/blog/ai-pitch-deck-generators'>www.hebbia.com/blog/ai-pitch-deck-generators</a></td><td class='num'>6</td><td>Beautiful.ai, Plus AI, Canva, Decktopus, Gamma</td></tr>
+<tr><td><a href='https://ahaslides.com/blog/ai-powerpoint/'>ahaslides.com/blog/ai-powerpoint/</a></td><td class='num'>5</td><td>Prezent, Microsoft Copilot, Plus AI</td></tr>
+<tr><td><a href='https://www.aicarousels.com/blog/best-ai-presentation-tools-2026'>www.aicarousels.com/blog/best-ai-presentation-tools-2026</a></td><td class='num'>4</td><td>Microsoft Copilot, Gamma, Canva</td></tr>
+<tr><td><a href='https://allmind.ai/research/ai-stock-pitch-decks'>allmind.ai/research/ai-stock-pitch-decks</a></td><td class='num'>3</td><td>Microsoft Copilot</td></tr></tbody></table></div>
+</section>
+<section>
+  <h2>Does AI know what Slidely is?</h2>
+  <p class="sub">Questions that name Slidely directly. Click to read the full answers.</p>
+  <details><summary><b>generic guess (no PowerPoint add-in, no enterprise focus)</b> - “What is Slidely AI?” (run 1)</summary><p class='answer'>**Slidely AI** (often referred to simply as **Slidely**) is an AI-powered presentation maker designed to help users create professional slideshows, pitch decks, and educational presentations quickly and effortlessly. 
+
+Instead of spending hours designing layouts, formatting text, and searching for images, users can input a prompt, topic, or document, and the AI generates a complete, structured presentation in a matter of minutes.
+
+Here is a breakdown of its key features and how it works:
+
+### Key Features
+* **Text-to-Presentation:** You simply type in a topic, outline, or paste a block of text (like an article or report), and the AI converts it into slide-by-slide content.
+* **Automated Design &amp; Formatting:** Slidely AI automatically selects appropriate layouts, color schemes, and fonts that fit the topic of your presentation.
+* **AI Image and Icon Generation:** It can automatically sugg…</p></details>
+<details><summary><b>mixes it up with the old Slidely photo/video app</b> - “What is Slidely AI?” (run 2)</summary><p class='answer'>**Slidely AI** (often simply referred to as **Slidely**) is an AI-powered presentation maker designed to help users create professional slide decks, pitches, and educational presentations quickly and efficiently. 
+
+Instead of spending hours designing layouts, formatting text, and searching for images, users can input a prompt, a document, or an outline, and the AI generates a complete, visually appealing presentation.
+
+Here is a breakdown of its key features, how it works, and who it is for:
+
+### Key Features
+* **Text-to-Presentation:** You type in a topic or prompt (e.g., &quot;Create a 10-slide pitch deck for a sustainable coffee brand&quot;), and the AI generates the content, structure, and design.
+* **Document-to-Slides:** You can upload existing documents, PDFs, or notes, and Slidely will summarize and convert them into a slide format.
+* **AI Design &amp; Layouts:** It automatically applies moder…</p></details>
+<details><summary><b>mixes it up with the old Slidely photo/video app</b> - “What is Slidely AI?” (run 3)</summary><p class='answer'>**Slidely AI** (often associated with the evolution of the popular digital storytelling and video creation platform **Slidely**) refers to AI-powered tools and features designed to make creating slideshows, video presentations, and visual content fast, automated, and engaging. 
+
+Here is a breakdown of what Slidely AI is and what it does:
+
+### 1. Evolution from &quot;Slidely&quot;
+Slidely originally started as a well-known web-based platform that allowed users to create photo and video collages, slideshows, and visual stories using music and images. In recent years, as artificial intelligence revolutionized content creation, the platform and similar tools integrated AI to automate the design and production process.
+
+### 2. Core Features of Slidely AI Tools
+While exact features can vary depending on the specific software update or tool bearing the name, AI-driven slideshow and video generators typic…</p></details>
+<details><summary><b>mixes it up with the old Slidely photo/video app</b> - “Is Slidely AI good for making PowerPoint presentations? How does it compare to Gamma?” (run 1)</summary><p class='answer'>When looking for AI-powered presentation tools, **Gamma** is widely recognized as one of the best on the market. **Slidely AI**, on the other hand, is a lesser-known tool that often gets confused with older media-sharing platforms (like the defunct &quot;Slidely&quot; photo video maker) or generic AI wrappers. 
+
+To answer your question directly: **Gamma is significantly better, more reliable, and feature-rich than Slidely AI.** 
+
+Here is a detailed breakdown of how Slidely AI performs and how it compares to Gamma.
+
+---
+
+### 1. Is Slidely AI good for making PowerPoint presentations?
+**Verdict:** It is mediocre at best and risky for professional use.
+
+* **Pros:** 
+  * Simple, text-to-deck generation.
+  * Can quickly put together a basic outline and some stock images.
+* **Cons:**
+  * **Limited Design Quality:** The templates often look dated, rigid, or poorly aligned, requiring a lot of manual tweaki…</p></details>
+<details><summary><b>thinks you mean a different tool</b> - “Is Slidely AI good for making PowerPoint presentations? How does it compare to Gamma?” (run 2)</summary><p class='answer'>When looking for AI-powered presentation tools, it’s important to clarify the name first: **Slidely** is traditionally known as an older photo/video slideshow maker, but the modern, popular AI presentation tool people usually compare to Gamma is **Slidesgo (by Freepik)**, **SlidesAI**, **Pitch**, or **Beautiful.ai**. 
+
+Assuming you are referring to **AI-powered slide generators in general** (and specifically comparing tools like SlidesAI or generic AI presentation makers to **Gamma**), here is how they stack up.
+
+---
+
+### Gamma: The Gold Standard for Modern AI Decks
+Gamma has quickly become one of the most popular AI presentation tools on the market. Instead of traditional PowerPoint slides, it uses a flexible, web-first &quot;card&quot; system that can be exported to PowerPoint (.pptx).
+
+*   **How it works:** You type in a prompt, choose a tone and visual theme, and Gamma generates a complete, be…</p></details>
+<details><summary><b>thinks you mean a different tool</b> - “Is Slidely AI good for making PowerPoint presentations? How does it compare to Gamma?” (run 3)</summary><p class='answer'>When evaluating AI presentation tools, it is important to first clarify the name, as there are a few similar tools in the AI space. You are likely referring to **SlidesAI** (the popular Google Workspace add-on) or **SlideSpeak** / **Gamma**. Assuming you mean **SlidesAI.io** (the tool that integrates directly with Google Slides and PowerPoint), let&#x27;s look at how it works and how it compares to **Gamma App**, which is currently one of the market leaders in AI-generated presentations.
+
+Here is an honest review of Slidely/SlidesAI and how it stacks up against Gamma.
+
+---
+
+### Part 1: What is SlidesAI? (Often called Slidely)
+SlidesAI is an extension primarily built for **Google Slides** (though it now offers PowerPoint integration via Microsoft add-ins). Instead of generating a presentation from scratch in a standalone web app, it takes your text prompt or pasted text and automatically build…</p></details>
+<details><summary><b>generic guess (no PowerPoint add-in, no enterprise focus)</b> - “Who uses Slidely.ai and what does it do?” (run 1)</summary><p class='answer'>Based on the current AI and tech landscape, **Slidely.ai** is an AI-powered platform designed to automate and streamline the creation of presentations, pitch decks, and slideshows. 
+
+Here is a breakdown of what Slidely.ai does and who uses it.
+
+---
+
+### What Does Slidely.ai Do?
+Slidely.ai acts as an intelligent presentation assistant, helping users transform raw text, ideas, or data into polished, professional slide decks in a fraction of the time it would take manually. Key features typically include:
+
+1. **Text-to-Slide Generation:** Users can input a prompt, an article, a document, or bullet points, and the AI automatically structures the content across logical slides.
+2. **Automated Design &amp; Layout:** Instead of manually formatting text boxes, aligning images, and choosing color schemes, the AI applies professional design templates, typography, and visual hierarchies automatically.
+3…</p></details>
+<details><summary><b>generic guess (no PowerPoint add-in, no enterprise focus)</b> - “Who uses Slidely.ai and what does it do?” (run 2)</summary><p class='answer'>**Slidely.ai** (often associated with tools in the modern AI presentation and content creation space) is designed to streamline the process of creating professional slide decks, pitch decks, and presentations using artificial intelligence. 
+
+Here is a breakdown of what it does and who uses it.
+
+---
+
+### What Does Slidely.ai Do?
+
+Slidely.ai acts as an AI-powered co-pilot for presentation design. Its core functions typically include:
+
+1. **Text-to-Presentation Generation:** Users can input a prompt, a rough outline, a document, or notes, and the AI automatically generates a complete slide deck, including structure, headlines, and bullet points.
+2. **AI Content Assistance:** It helps summarize long blocks of text into concise, presentation-friendly bullet points and suggests better phrasing or copywriting for slides.
+3. **Automated Design &amp; Layout:** Instead of manually formatting text boxe…</p></details>
+<details><summary><b>generic guess (no PowerPoint add-in, no enterprise focus)</b> - “Who uses Slidely.ai and what does it do?” (run 3)</summary><p class='answer'>**Slidely.ai** (often associated with AI-powered presentation and slide-deck creation tools) is designed to streamline the process of building professional presentations, pitches, and educational content. 
+
+Here is a breakdown of what it does and who uses it:
+
+---
+
+### What Does Slidely.ai Do?
+Slidely.ai leverages artificial intelligence to automate the creation, design, and formatting of slide decks. Its core functions typically include:
+
+1. **Text-to-Presentation Generation:** Users can input a prompt, a rough outline, a Word document, or a PDF, and the AI automatically generates a complete slide deck (structure, headings, and bullet points).
+2. **Automated Design &amp; Formatting:** Instead of manually aligning text boxes, choosing color palettes, and adding shapes, the AI applies professional design templates, layouts, and typography automatically.
+3. **Content Summarization:** The AI co…</p></details>
+</section>
+
+<footer>Built by an applicant for the Founding Growth Engineer role. Independent analysis, not affiliated with Slidely.
+Method: Gemini API without web search, 3 runs per question (answers vary run to run); a mention = the tool's name
+appears in the answer (whole-word match). Code and raw answers are in the repository.</footer>
+</main></body></html>

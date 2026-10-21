@@ -1,0 +1,240 @@
+{
+  "run_date": "2026-10-21",
+  "models": [
+    "gemini-flash-latest",
+    "gemini-flash-lite-latest"
+  ],
+  "answers": 120,
+  "prompts": 40,
+  "runs_per_prompt": 3,
+  "target": "Slidely",
+  "brands": [
+    {
+      "name": "Gamma",
+      "mention_rate": 90.8,
+      "top3_rate": 78.3,
+      "first_rate": 56.7,
+      "prompt_reach": 95.0
+    },
+    {
+      "name": "Beautiful.ai",
+      "mention_rate": 84.2,
+      "top3_rate": 53.3,
+      "first_rate": 6.7,
+      "prompt_reach": 95.0
+    },
+    {
+      "name": "Microsoft Copilot",
+      "mention_rate": 79.2,
+      "top3_rate": 33.3,
+      "first_rate": 5.8,
+      "prompt_reach": 97.5
+    },
+    {
+      "name": "Google Slides",
+      "mention_rate": 70.8,
+      "top3_rate": 40.0,
+      "first_rate": 6.7,
+      "prompt_reach": 92.5
+    },
+    {
+      "name": "Plus AI",
+      "mention_rate": 49.2,
+      "top3_rate": 35.8,
+      "first_rate": 9.2,
+      "prompt_reach": 72.5
+    },
+    {
+      "name": "ChatGPT",
+      "mention_rate": 45.0,
+      "top3_rate": 6.7,
+      "first_rate": 5.8,
+      "prompt_reach": 72.5
+    },
+    {
+      "name": "Tome",
+      "mention_rate": 43.3,
+      "top3_rate": 22.5,
+      "first_rate": 3.3,
+      "prompt_reach": 77.5
+    },
+    {
+      "name": "Claude",
+      "mention_rate": 33.3,
+      "top3_rate": 0.8,
+      "first_rate": 0.0,
+      "prompt_reach": 52.5
+    },
+    {
+      "name": "SlideSpeak",
+      "mention_rate": 19.2,
+      "top3_rate": 10.8,
+      "first_rate": 4.2,
+      "prompt_reach": 42.5
+    },
+    {
+      "name": "think-cell",
+      "mention_rate": 11.7,
+      "top3_rate": 0.8,
+      "first_rate": 0.0,
+      "prompt_reach": 15.0
+    },
+    {
+      "name": "SlidesAI",
+      "mention_rate": 11.7,
+      "top3_rate": 5.8,
+      "first_rate": 0.0,
+      "prompt_reach": 30.0
+    },
+    {
+      "name": "UpSlide",
+      "mention_rate": 10.0,
+      "top3_rate": 0.8,
+      "first_rate": 0.0,
+      "prompt_reach": 15.0
+    },
+    {
+      "name": "Canva",
+      "mention_rate": 9.2,
+      "top3_rate": 2.5,
+      "first_rate": 0.8,
+      "prompt_reach": 25.0
+    },
+    {
+      "name": "Pitch",
+      "mention_rate": 5.0,
+      "top3_rate": 3.3,
+      "first_rate": 0.8,
+      "prompt_reach": 15.0
+    },
+    {
+      "name": "Presentations.AI",
+      "mention_rate": 4.2,
+      "top3_rate": 3.3,
+      "first_rate": 0.0,
+      "prompt_reach": 7.5
+    },
+    {
+      "name": "Prezent",
+      "mention_rate": 0.8,
+      "top3_rate": 0.0,
+      "first_rate": 0.0,
+      "prompt_reach": 2.5
+    },
+    {
+      "name": "Decktopus",
+      "mention_rate": 0.8,
+      "top3_rate": 0.0,
+      "first_rate": 0.0,
+      "prompt_reach": 2.5
+    },
+    {
+      "name": "Slidely",
+      "mention_rate": 0.0,
+      "top3_rate": 0.0,
+      "first_rate": 0.0,
+      "prompt_reach": 0.0
+    }
+  ],
+  "categories": {
+    "consulting": {
+      "answers": 21,
+      "target_rate": 0.0,
+      "leader": "Gamma",
+      "leader_rate": 100.0
+    },
+    "banking_pe": {
+      "answers": 15,
+      "target_rate": 0.0,
+      "leader": "Microsoft Copilot",
+      "leader_rate": 93.3
+    },
+    "enterprise_brand": {
+      "answers": 21,
+      "target_rate": 0.0,
+      "leader": "Beautiful.ai",
+      "leader_rate": 95.2
+    },
+    "powerpoint_native": {
+      "answers": 21,
+      "target_rate": 0.0,
+      "leader": "Beautiful.ai",
+      "leader_rate": 95.2
+    },
+    "general": {
+      "answers": 18,
+      "target_rate": 0.0,
+      "leader": "Gamma",
+      "leader_rate": 100.0
+    },
+    "india": {
+      "answers": 9,
+      "target_rate": 0.0,
+      "leader": "Google Slides",
+      "leader_rate": 88.9
+    },
+    "use_case": {
+      "answers": 15,
+      "target_rate": 0.0,
+      "leader": "Gamma",
+      "leader_rate": 93.3
+    }
+  },
+  "target_hits": [],
+  "brand_knowledge": [
+    {
+      "prompt": "What is Slidely AI?",
+      "run": 1,
+      "verdict": "generic guess (no PowerPoint add-in, no enterprise focus)",
+      "answer": "**Slidely AI** (often referred to simply as **Slidely**) is an AI-powered presentation maker designed to help users create professional slideshows, pitch decks, and educational presentations quickly and effortlessly. \n\nInstead of spending hours designing layouts, formatting text, and searching for images, users can input a prompt, topic, or document, and the AI generates a complete, structured presentation in a matter of minutes.\n\nHere is a breakdown of its key features and how it works:\n\n### Key Features\n* **Text-to-Presentation:** You simply type in a topic, outline, or paste a block of text (like an article or report), and the AI converts it into slide-by-slide content.\n* **Automated Design & Formatting:** Slidely AI automatically selects appropriate layouts, color schemes, and fonts that fit the topic of your presentation.\n* **AI Image and Icon Generation:** It can automatically suggest or generate relevant images, illustrations, and icons to match the content of each slide.\n* **Customization and Editing:** While the AI does the heavy lifting, users retain full control to edit text, swap images, change themes, and rearrange slides using a drag-and-drop editor.\n* **Export Options:** Presentations can typically be exported to popular formats like Microsoft PowerPoint (.pptx), PDF, or shared via a web link.\n\n### Who is it for?\n* **Professionals & Marketers:** For quickly putting together sales pitches, business reports, and marketing updates.\n* **Educators & Students:** For creating engaging lesson plans, lectures, and school projects without spending excessive time on formatting.\n* **Founders & Entrepreneurs:** For drafting investor pitch decks based on a business plan or rough notes.\n\n### Why use an AI presentation tool like Slidely?\nThe primary benefit is **time-saving**. Traditional presentation software (like PowerPoint or Keynote) requires manual design work. Tools like Slidely AI shift the focus from *how the presentation looks* to *what the presentation says*, handling the design aesthetics automatically."
+    },
+    {
+      "prompt": "What is Slidely AI?",
+      "run": 2,
+      "verdict": "mixes it up with the old Slidely photo/video app",
+      "answer": "**Slidely AI** (often simply referred to as **Slidely**) is an AI-powered presentation maker designed to help users create professional slide decks, pitches, and educational presentations quickly and efficiently. \n\nInstead of spending hours designing layouts, formatting text, and searching for images, users can input a prompt, a document, or an outline, and the AI generates a complete, visually appealing presentation.\n\nHere is a breakdown of its key features, how it works, and who it is for:\n\n### Key Features\n* **Text-to-Presentation:** You type in a topic or prompt (e.g., \"Create a 10-slide pitch deck for a sustainable coffee brand\"), and the AI generates the content, structure, and design.\n* **Document-to-Slides:** You can upload existing documents, PDFs, or notes, and Slidely will summarize and convert them into a slide format.\n* **AI Design & Layouts:** It automatically applies modern design principles, including color schemes, typography, and visual hierarchies, so slides look polished rather than generic.\n* **Smart Content Generation:** It doesn't just design the slides; it actually writes the bullet points, headlines, and talking points for each slide.\n* **Customization & Editing:** Once the AI generates the presentation, users can manually edit text, swap out images, change colors, and rearrange slides using a drag-and-drop editor.\n* **Export Options:** Presentations can usually be exported to popular formats like PowerPoint (PPTX), PDF, or presented directly through the web.\n\n### Who is Slidely AI for?\n* **Professionals & Entrepreneurs:** For quickly putting together business reports, marketing proposals, and startup pitch decks.\n* **Marketers:** For creating campaign overviews and client presentations on the fly.\n* **Educators & Students:** For building lecture slides, training materials, or school project presentations without starting from a blank page.\n\n### The Broader Context of \"Slidely\"\nIt is worth noting that the brand name **Slidely** historically belongs to an older digital media company known for creating photo and video slideshow makers (popular around the early 2010s). However, in the modern landscape, \"Slidely AI\" refers to these newer generative AI tools designed to disrupt traditional presentation software like Microsoft PowerPoint and Google Slides. \n\n*If you are looking for a specific website, pricing details, or a comparison between Slidely AI and other tools like Gamma, Tome, or Beautiful.ai, let me know!*"
+    },
+    {
+      "prompt": "What is Slidely AI?",
+      "run": 3,
+      "verdict": "mixes it up with the old Slidely photo/video app",
+      "answer": "**Slidely AI** (often associated with the evolution of the popular digital storytelling and video creation platform **Slidely**) refers to AI-powered tools and features designed to make creating slideshows, video presentations, and visual content fast, automated, and engaging. \n\nHere is a breakdown of what Slidely AI is and what it does:\n\n### 1. Evolution from \"Slidely\"\nSlidely originally started as a well-known web-based platform that allowed users to create photo and video collages, slideshows, and visual stories using music and images. In recent years, as artificial intelligence revolutionized content creation, the platform and similar tools integrated AI to automate the design and production process.\n\n### 2. Core Features of Slidely AI Tools\nWhile exact features can vary depending on the specific software update or tool bearing the name, AI-driven slideshow and video generators typically include:\n* **Text-to-Video/Slideshow:** Users can input a text prompt, script, or article, and the AI automatically generates a complete slide deck or video complete with visuals, transitions, and text.\n* **Automated Design & Layout:** The AI analyzes the content and chooses the best layouts, color palettes, and fonts to match the tone of the presentation.\n* **Smart Media Selection:** AI automatically suggests or selects relevant stock photos, video clips, and background music that match the topic of the slides.\n* **AI Voiceovers & Scriptwriting:** Some versions include tools to write the presentation script for you and generate realistic AI voice narration.\n\n### 3. Who is it for?\n* **Marketers:** For quickly creating social media video ads, product promos, and visual content.\n* **Educators and Students:** For turning notes or essays into engaging presentations.\n* **Business Professionals:** For building pitch decks and reports without needing advanced graphic design skills.\n\n*Note: In the fast-moving AI landscape, \"Slidely\" is sometimes referenced alongside other modern AI presentation tools like Tome, Gamma, and Beautiful.ai, which share the same goal of automating slide and video creation using artificial intelligence.*"
+    },
+    {
+      "prompt": "Is Slidely AI good for making PowerPoint presentations? How does it compare to Gamma?",
+      "run": 1,
+      "verdict": "mixes it up with the old Slidely photo/video app",
+      "answer": "When looking for AI-powered presentation tools, **Gamma** is widely recognized as one of the best on the market. **Slidely AI**, on the other hand, is a lesser-known tool that often gets confused with older media-sharing platforms (like the defunct \"Slidely\" photo video maker) or generic AI wrappers. \n\nTo answer your question directly: **Gamma is significantly better, more reliable, and feature-rich than Slidely AI.** \n\nHere is a detailed breakdown of how Slidely AI performs and how it compares to Gamma.\n\n---\n\n### 1. Is Slidely AI good for making PowerPoint presentations?\n**Verdict:** It is mediocre at best and risky for professional use.\n\n* **Pros:** \n  * Simple, text-to-deck generation.\n  * Can quickly put together a basic outline and some stock images.\n* **Cons:**\n  * **Limited Design Quality:** The templates often look dated, rigid, or poorly aligned, requiring a lot of manual tweaking.\n  * **Fact-Checking Issues:** Like many lower-tier AI tools, it can hallucinate facts or generate generic placeholder text that requires heavy editing.\n  * **Export Limitations:** Exporting to standard editable PowerPoint (.pptx) formats can sometimes break formatting, forcing you to fix it manually slide by slide.\n  * **Lack of Advanced Features:** It doesn't offer interactive elements, deep customization, or sophisticated layout shifting.\n\n---\n\n### 2. How does Slidely AI compare to Gamma?\n\n**Gamma** is an industry leader for AI-generated presentations, documents, and webpages. Comparing the two reveals a night-and-day difference in quality and user experience.\n\n| Feature | Slidely AI | Gamma App | Winner |\n| :--- | :--- | :--- | :--- |\n| **Design Quality** | Basic, often looks like a generic template. | Modern, visually stunning, highly varied layouts. | **Gamma** |\n| **AI Prompt Flexibility** | Basic text-to-slide. | Handles complex prompts, imports outlines, and can ingest PDFs/docs to make presentations. | **Gamma** |\n| **Customization** | Rigid; hard to change themes without breaking things. | Extremely flexible \"block-based\" editor; easy to restyle instantly with one click. | **Gamma** |\n| **Interactivity** | Minimal. | Supports cards, toggles, accordions, video embeds, and web links. | **Gamma** |\n| **Export Options** | PDF, sometimes PPTX (with formatting issues). | Clean export to PowerPoint (.pptx) and PDF. | **Gamma** |\n| **Pricing/Value** | Often has confusing credit systems or sketchy trial terms. | Generous free tier with transparent, affordable paid plans. | **Gamma** |\n\n---\n\n### The Verdict\n\n* **Skip Slidely AI.** Unless you stumble upon a very specific niche feature you need, you will likely find the output frustrating and unprofessional.\n* **Use Gamma instead.** Gamma saves you time, generates genuinely beautiful and modern slides, allows you to export cleanly to PowerPoint, and has a much more polished user interface. \n\n*(Alternative recommendation: If you specifically need your presentations to live natively inside Microsoft PowerPoint with AI assistance, look into **Microsoft Copilot for PowerPoint** or **Beautiful.ai** instead of Gamma.)*"
+    },
+    {
+      "prompt": "Is Slidely AI good for making PowerPoint presentations? How does it compare to Gamma?",
+      "run": 2,
+      "verdict": "thinks you mean a different tool",
+      "answer": "When looking for AI-powered presentation tools, it’s important to clarify the name first: **Slidely** is traditionally known as an older photo/video slideshow maker, but the modern, popular AI presentation tool people usually compare to Gamma is **Slidesgo (by Freepik)**, **SlidesAI**, **Pitch**, or **Beautiful.ai**. \n\nAssuming you are referring to **AI-powered slide generators in general** (and specifically comparing tools like SlidesAI or generic AI presentation makers to **Gamma**), here is how they stack up.\n\n---\n\n### Gamma: The Gold Standard for Modern AI Decks\nGamma has quickly become one of the most popular AI presentation tools on the market. Instead of traditional PowerPoint slides, it uses a flexible, web-first \"card\" system that can be exported to PowerPoint (.pptx).\n\n*   **How it works:** You type in a prompt, choose a tone and visual theme, and Gamma generates a complete, beautifully designed deck with text, layout, and AI-generated images in about 30 seconds.\n*   **Strengths:** \n    *   **Stunning Design:** Gamma creates modern, engaging layouts that look like they were made by a professional web designer, avoiding the boring bullet points of traditional PowerPoint.\n    *   **Flexibility:** You can easily add interactive elements (videos, cards, web links) because it’s web-based.\n    *   **Editing:** It’s extremely easy to rewrite sections, change themes globally, or add new AI-generated blocks with a simple chat prompt.\n*   **Weaknesses:** Because its native format is web-based, complex animations and strict formatting can sometimes get lost when you export them to traditional Microsoft PowerPoint (.pptx).\n\n---\n\n### How Other AI Presentation Tools Compare (The \"Slidely/SlidesAI\" Category)\nIf you are using tools that integrate directly *inside* Google Slides or Microsoft PowerPoint (like **SlidesAI** or **Gamma competitors**), the experience is quite different.\n\n*   **Integration:** Tools like SlidesAI live inside Google Workspace. They read your text prompt or raw text document and generate the slides *directly inside* Google Slides. \n*   **Strengths:** \n    *   **Native Control:** Since the output is a standard Google Slide or PowerPoint file, you have native control over every single text box, shape, and transition. \n    *   **No New Platform:** You don’t have to learn a new app like Gamma; you stay within the Google/Microsoft ecosystem.\n*   **Weaknesses:** \n    *   **Design Limitations:** The designs tend to look a bit more generic and \"template-heavy\" compared to Gamma’s slick, modern layouts. \n    *   **Image Sourcing:** They often struggle to find or generate contextually accurate images as seamlessly as Gamma does.\n\n---\n\n### Head-to-Head Comparison\n\n| Feature | Gamma | Traditional AI Tools (e.g., SlidesAI / Slidely alternatives) |\n| :--- | :--- | :--- |\n| **Primary Output** | Web-based decks (exportable to PPTX/PDF) | Native PowerPoint (.pptx) or Google Slides |\n| **Design Quality** | **Exceptional.** Modern, variable layouts, great use of whitespace. | **Good, but standard.** Often relies on predictable templates. |\n| **Ease of Use** | Extremely fast; great prompt-to-deck workflow. | Requires you to work within Google Slides/PPT structure. |\n| **AI Capabilities** | Generates full layouts, copy, and images simultaneously. | Mostly generates text outlines and populates existing templates. |\n| **Best For** | Pitch decks, modern presentations, marketing, and quick overviews. | Corporate presentations requiring strict adherence to brand PPT templates. |\n\n---\n\n### The Verdict: Which should you use?\n\n1.  **Choose Gamma if:** You want the best-looking presentation with the least amount of effort. If you don't mind presenting directly from the web (or exporting to PDF/PPT), Gamma blows almost all traditional competitors out of the water in terms of visual appeal and speed.\n2.  **Choose a PowerPoint/Google Slides Add-on if:** Your company requires you to use strict corporate PowerPoint templates, or if you need deep, manual control over every single object on the slide using tools you already know."
+    },
+    {
+      "prompt": "Is Slidely AI good for making PowerPoint presentations? How does it compare to Gamma?",
+      "run": 3,
+      "verdict": "thinks you mean a different tool",
+      "answer": "When evaluating AI presentation tools, it is important to first clarify the name, as there are a few similar tools in the AI space. You are likely referring to **SlidesAI** (the popular Google Workspace add-on) or **SlideSpeak** / **Gamma**. Assuming you mean **SlidesAI.io** (the tool that integrates directly with Google Slides and PowerPoint), let's look at how it works and how it compares to **Gamma App**, which is currently one of the market leaders in AI-generated presentations.\n\nHere is an honest review of Slidely/SlidesAI and how it stacks up against Gamma.\n\n---\n\n### Part 1: What is SlidesAI? (Often called Slidely)\nSlidesAI is an extension primarily built for **Google Slides** (though it now offers PowerPoint integration via Microsoft add-ins). Instead of generating a presentation from scratch in a standalone web app, it takes your text prompt or pasted text and automatically builds slides *inside* your existing presentation software.\n\n**Pros:**\n* **Native Integration:** Works directly inside Google Slides and PowerPoint, meaning you don’t have to learn a brand-new interface.\n* **Text-to-Slide:** You can paste an article, essay, or meeting notes, and it will summarize and format them into slides.\n* **Full Control:** Because the output is native Google/Microsoft slides, you can edit every single element easily using tools you already know.\n\n**Cons:**\n* **Basic Design:** The visual designs can look a bit generic and \"template-heavy.\" It relies on standard shapes and layouts.\n* **Limited Multimedia:** It struggles to add engaging visuals, icons, or interactive elements automatically; you have to source and add those yourself.\n* **No Web App:** You must use it as an add-on within Google Slides or PowerPoint.\n\n---\n\n### Part 2: How Does It Compare to Gamma?\n**Gamma App** is a standalone, web-based AI creation tool that has taken the presentation world by storm. It doesn’t just make slides; it creates \"web pages, documents, and presentations\" that look modern and polished.\n\nHere is how they compare head-to-head:\n\n#### 1. Design Quality & Aesthetics\n* **Gamma:** **Winner.** Gamma produces stunning, modern, highly polished presentations out of the box. It uses cards, beautiful color palettes, modern typography, and smart layouts that look like a professional designer made them.\n* **SlidesAI:** **Loser.** SlidesAI creates standard, somewhat plain presentations. They look like a human put them together quickly using a standard corporate template.\n\n#### 2. Ease of Use & Workflow\n* **SlidesAI:** **Winner for Google/PPT loyalists.** If your workflow requires everything to live in Google Slides or Microsoft PowerPoint, SlidesAI wins because it generates the deck right where you need it.\n* **Gamma:** **Winner for speed and independence.** Gamma is a standalone app. You prompt it, it generates a gorgeous deck in 30 seconds, and you edit it in their web editor. (You can later export it to PowerPoint or PDF, though formatting can shift slightly upon export).\n\n#### 3. Flexibility and Features\n* **Gamma:** **Winner.** Gamma allows you to easily add images, GIFs, videos, web links, and interactive cards (like toggles or columns). It also lets you use AI to rewrite specific blocks, change themes with one click, or expand on a single bullet point.\n* **SlidesAI:** **Basic.** It is strictly text-to-slide. You get a title, bullet points, and maybe a basic layout. You will have to do the heavy lifting of making it visually engaging.\n\n#### 4. Pricing\n* Both offer free tiers with monthly generation limits.\n* Paid plans for both hover around $10–$20/month, offering more AI credits, higher-end templates, and export capabilities.\n\n---\n\n### The Verdict: Which One Should You Choose?\n\n* **Choose Gamma if:** You want your presentation to **look incredible** with minimal effort. If you are pitching clients, presenting to executives, or want to blow an audience away with modern design, Gamma is vastly superior. \n* **Choose SlidesAI if:** You are forced to work strictly within **Google Slides or Microsoft PowerPoint**, your presentation is text-heavy (like a training manual or lecture), and you just want an AI to do the boring work of breaking your text up into bullet points across multiple slides."
+    },
+    {
+      "prompt": "Who uses Slidely.ai and what does it do?",
+      "run": 1,
+      "verdict": "generic guess (no PowerPoint add-in, no enterprise focus)",
+      "answer": "Based on the current AI and tech landscape, **Slidely.ai** is an AI-powered platform designed to automate and streamline the creation of presentations, pitch decks, and slideshows. \n\nHere is a breakdown of what Slidely.ai does and who uses it.\n\n---\n\n### What Does Slidely.ai Do?\nSlidely.ai acts as an intelligent presentation assistant, helping users transform raw text, ideas, or data into polished, professional slide decks in a fraction of the time it would take manually. Key features typically include:\n\n1. **Text-to-Slide Generation:** Users can input a prompt, an article, a document, or bullet points, and the AI automatically structures the content across logical slides.\n2. **Automated Design & Layout:** Instead of manually formatting text boxes, aligning images, and choosing color schemes, the AI applies professional design templates, typography, and visual hierarchies automatically.\n3. **Content Enhancement:** Many tools of this type can summarize lengthy paragraphs, generate talking points, or suggest better phrasing for business and educational contexts.\n4. **Customization:** Users can typically tweak layouts, swap out AI-generated images, and apply brand kits (logos, brand colors, fonts) to ensure the presentation matches their organization’s visual identity.\n5. **Export Options:** Presentations can usually be exported to standard formats like PowerPoint (PPTX), PDF, or presented directly from the web.\n\n---\n\n### Who Uses Slidely.ai?\n\nBecause presentations are a universal communication tool across industries, Slidely.ai (and similar AI presentation tools) serves a diverse user base:\n\n#### 1. Business Professionals & Corporate Teams\n* **Use Case:** Creating quarterly reports, strategy overviews, project proposals, and internal training materials.\n* **Why:** It saves hours of formatting time, allowing managers and analysts to focus on the data and strategy rather than alignment and font sizes.\n\n#### 2. Startups & Entrepreneurs\n* **Use Case:** Building investor pitch decks, product launch presentations, and stakeholder updates.\n* **Why:** Founders often need to pitch quickly and frequently. Slidely helps them create sleek, visually compelling decks that look like they were designed by a professional agency without the associated cost.\n\n#### 3. Marketers & Sales Representatives\n* **Use Case:** Crafting client proposals, marketing campaign recaps, and product demos.\n* **Why:** Sales teams need to personalize pitch decks quickly for different clients. AI tools allow them to rapidly generate tailored presentations on the fly.\n\n#### 4. Educators & Trainers\n* **Use Case:** Developing lecture slides, training modules, and educational workshops.\n* **Why:** Teachers and corporate trainers have heavy workloads; turning lesson notes into structured slides drastically reduces prep time.\n\n#### 5. Consultants & Freelancers\n* **Use Case:** Presenting research, audit findings, and deliverables to clients.\n* **Why:** Independent professionals often work solo, meaning they don’t have design teams to help them. Tools like Slidely help them maintain a high-end, polished aesthetic for client-facing work. \n\n***\n\n*Note: Depending on the specific iteration or rebranding of the tool, features may overlap with other popular AI slide generators like Tome, Gamma, Beautiful.ai, or SlidesGPT.*"
+    },
+    {
+      "prompt": "Who uses Slidely.ai and what does it do?",
+      "run": 2,
+      "verdict": "generic guess (no PowerPoint add-in, no enterprise focus)",
+      "answer": "**Slidely.ai** (often associated with tools in the modern AI presentation and content creation space) is designed to streamline the process of creating professional slide decks, pitch decks, and presentations using artificial intelligence. \n\nHere is a breakdown of what it does and who uses it.\n\n---\n\n### What Does Slidely.ai Do?\n\nSlidely.ai acts as an AI-powered co-pilot for presentation design. Its core functions typically include:\n\n1. **Text-to-Presentation Generation:** Users can input a prompt, a rough outline, a document, or notes, and the AI automatically generates a complete slide deck, including structure, headlines, and bullet points.\n2. **AI Content Assistance:** It helps summarize long blocks of text into concise, presentation-friendly bullet points and suggests better phrasing or copywriting for slides.\n3. **Automated Design & Layout:** Instead of manually formatting text boxes, aligning shapes, and choosing colors, the AI applies professional design layouts, typography, and themes automatically.\n4. **Image & Visual Generation:** Many tools of this nature integrate AI image generation or smart stock photo search to add relevant visuals to slides instantly.\n5. **Collaboration & Export:** It allows teams to work together on decks in real-time and usually offers export options to popular formats like PowerPoint (.pptx) or PDF.\n\n---\n\n### Who Uses Slidely.ai?\n\nBecause presentations are a universal need across many industries, Slidely.ai is used by a diverse group of professionals:\n\n* **Startup Founders & Entrepreneurs:** Used to quickly draft pitch decks for investors without spending days agonizing over design and formatting.\n* **Marketers & Sales Professionals:** Used to create tailored sales pitches, client proposals, and marketing campaign recaps rapidly.\n* **Corporate Professionals & Consultants:** Used by business analysts, project managers, and strategists who need to present data, quarterly reports, and strategies to leadership or clients efficiently.\n* **Educators, Trainers, & Students:** Used to turn lecture notes, research papers, or training manuals into engaging slide decks for classrooms or workshops.\n* **Freelancers & Agencies:** Used by service providers who need to present project scopes, portfolios, or deliverables to clients and want to look polished while saving time.\n\nIn short, Slidely.ai is used by **anyone who needs to make presentations regularly but wants to skip the tedious design and formatting process** so they can focus purely on the content."
+    },
+    {
+      "prompt": "Who uses Slidely.ai and what does it do?",
+      "run": 3,
+      "verdict": "generic guess (no PowerPoint add-in, no enterprise focus)",
+      "answer": "**Slidely.ai** (often associated with AI-powered presentation and slide-deck creation tools) is designed to streamline the process of building professional presentations, pitches, and educational content. \n\nHere is a breakdown of what it does and who uses it:\n\n---\n\n### What Does Slidely.ai Do?\nSlidely.ai leverages artificial intelligence to automate the creation, design, and formatting of slide decks. Its core functions typically include:\n\n1. **Text-to-Presentation Generation:** Users can input a prompt, a rough outline, a Word document, or a PDF, and the AI automatically generates a complete slide deck (structure, headings, and bullet points).\n2. **Automated Design & Formatting:** Instead of manually aligning text boxes, choosing color palettes, and adding shapes, the AI applies professional design templates, layouts, and typography automatically.\n3. **Content Summarization:** The AI condenses long articles, reports, or notes into concise, digestible bullet points suitable for slides.\n4. **Visual Recommendations:** It suggests or generates relevant images, icons, and charts to match the content of each slide.\n5. **Editing and Customization:** Users retain the ability to manually edit text, swap layouts, and tweak designs using a user-friendly interface or export the final deck to popular formats like PowerPoint (.pptx) or PDF.\n\n---\n\n### Who Uses Slidely.ai?\nBecause presentations are a universal requirement across many industries, Slidely.ai serves a diverse user base:\n\n* **Startup Founders & Entrepreneurs:** Used to quickly build pitch decks for investors, accelerator applications, or partnership proposals without spending days on design.\n* **Sales & Marketing Professionals:** Used to create client-facing presentations, product overviews, and campaign proposals on short notice.\n* **Educators & Trainers:** Teachers, university professors, and corporate trainers use it to convert lesson plans, textbooks, or training manuals into engaging slide presentations for students or employees.\n* **Business Analysts & Consultants:** Professionals who need to present complex data and market research to stakeholders in a clean, visual format.\n* **Students:** Used to quickly put together school projects, research presentations, and academic slide decks.\n\n*Note: Depending on the exact platform iteration, AI presentation tools are built to save users anywhere from 50% to 90% of the time usually spent on building decks from scratch.*"
+    }
+  ]
+}
