@@ -63,7 +63,11 @@ def main():
         f"<details><summary><b>{escape(k['verdict'])}</b> - “{escape(k['prompt'])}” (run {k['run']})</summary>"
         f"<p class='answer'>{escape(k['answer'][:900])}{'…' if len(k['answer']) > 900 else ''}</p></details>"
         for k in s["brand_knowledge"])
-    main_verdict = max(verdict_counts, key=verdict_counts.get) if verdict_counts else "n/a"
+    n_correct = verdict_counts.get("knows it's a PowerPoint add-in", 0)
+    n_known = len(s["brand_knowledge"])
+    n_old_app = verdict_counts.get("mixes it up with the old Slidely photo/video app", 0)
+    n_other = verdict_counts.get("thinks you mean a different tool", 0)
+    n_targets = len(src["outreach_targets"]) if src else 0
 
     hits = "".join(
         f"<li>“{escape(h['prompt'])}” - run {h['run']}, named #{h['position']}</li>" for h in s["target_hits"]
@@ -154,8 +158,22 @@ Run on {s['run_date']} · model: {', '.join(s['models'])} · {s['answers']} answ
   <div class="kpi hl"><div class="big">{me['mention_rate']:g}%</div><div>of AI answers mention {target}</div></div>
   <div class="kpi"><div class="big">{leader['mention_rate']:g}%</div><div>mention {escape(leader['name'])}, the leader</div></div>
   {kpi_sources}
-  <div class="kpi"><div class="big" style="font-size:18px">{escape(main_verdict)}</div><div>when asked “What is {target} AI?”</div></div>
+  <div class="kpi"><div class="big">{n_correct}/{n_known}</div><div>answers about {target} describe it correctly</div></div>
 </div>
+
+<section>
+  <h2>What I'd do next</h2>
+  <ol>
+    <li><b>Get listed where AI looks.</b> {n_targets} ranking pages list 3+ competitors but not {target}
+    (table below). Pitch each one for inclusion, starting with the most crowded.</li>
+    <li><b>Fix the name collision.</b> Asked about {target} directly, Gemini mixed it up with the older
+    {target} photo/video app {n_old_app}× and assumed a different tool {n_other}×.
+    A clear “{target} AI is a PowerPoint add-in for consultants and enterprise teams” page, plus
+    comparison pages (vs Gamma, vs Copilot), gives AI engines the right facts.</li>
+    <li><b>Measure every week.</b> This tracker re-runs every Monday, so we can see whether 1 and 2 move the
+    numbers. Next: add ChatGPT, Perplexity and Claude, and a Slack alert when the share changes.</li>
+  </ol>
+</section>
 
 <section>
   <h2>Share of AI answers that mention each tool</h2>
